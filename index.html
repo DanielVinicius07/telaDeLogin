@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Login</h1>
+    <div class="card">
+    <!-- Estilização interna -->
+    <style>
+        * {
+            text-decoration: none;
+        }
+        p > a{
+            color: red;
+        }
+    </style>
+    <!-- Estilização inline -->
+    <h1 style="color: blue;">Login</h1>
     <form>
+        <div class="grid">
         <label for="">Nome</label>
         <input type="name">
 
         <label for="">Email</label>
-        <input type="email">
-        
+        <input type="email" id="email" placeholder="Digite seu email">
+        </div>
+        <div class="grid"></div>
         <label for="">Senha</label>
-        <input type="password" name="senha" id="senha">
+        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
 
         <label for="">Email</label>
         <input type="email">
-
+        </div>
         <p>Não possui conta?<a href="cadastro.html">Cadastre-se aqui</a>.</p>
-        
     </form>
+    </div>
 </body>
 </html>
