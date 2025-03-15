@@ -6,39 +6,26 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="card">
-    <!-- Estilização interna -->
-    <style>
-        * {
-            text-decoration: none;
-        }
-        p > a{
-            color: red;
-        }
-    </style>
-    <!-- Estilização inline -->
-    <h1 style="color: blue;">Login</h1>
-    <form>
+        <h1>Login</h1>    
+        <form>
         <div class="grid">
-        <label for="">Nome</label>
-        <input type="name">
-
-        <label for="">Email</label>
+        <label for="email">Email</label>
         <input type="email" id="email" placeholder="Digite seu email">
         </div>
-        <div class="grid"></div>
-        <label for="">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-
-        <label for="">Email</label>
-        <input type="email">
+        <div class="grid">
+        <label for="senha">Senha</label>
+        <input type="senha" id="senha" placeholder="Digite sua senha">
         </div>
+        <button type="submit">Entrar</button>
+
         <p>Não possui conta?<a href="cadastro.html">Cadastre-se aqui</a>.</p>
-    </form>
+
+        </form>
     </div>
 </body>
 </html>
